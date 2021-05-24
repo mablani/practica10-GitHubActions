@@ -13,3 +13,12 @@ jobs:
           npm -v
           pwd
           cat /etc/os-release
+  comandos-windows:
+    runs-on: windows-latest
+    steps: 
+      - name: getLocation
+        run: Get-Location
+      - name: pwd
+        run: pwd
+
+      
