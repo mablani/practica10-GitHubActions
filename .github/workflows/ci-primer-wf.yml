@@ -20,5 +20,6 @@ jobs:
         run: Get-Location
       - name: pwd
         run: pwd
+        shell: bash
 
       
