@@ -10,6 +10,6 @@ jobs:
       - name: scripts multilinea
         run: |
           node -v
-          nmp -v
+          npm -v
           pwd
           cat /etc/os-release
