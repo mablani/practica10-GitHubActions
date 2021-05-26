@@ -17,8 +17,8 @@ jobs:
       - name: Crear Archivo Random
         run: |
           echo $RANDOM >> random.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name mablani
+          git config user.email mablani@unirioja.es
           git add random.txt
           git commit -m "Añadido Random File"
           git push
