@@ -1,0 +1,13 @@
+name: Variables de Entorno
+on: push
+env:
+  WF_ENV: Esta es la variable general
+jobs:
+  log-env: 
+  runs-on: ubuntu-lastest
+  env: 
+    JOB_ENV: Esta es la variable de job
+  steps:
+    - name:
+    env:
+      STEP_ENV: Esta es la variable de step
