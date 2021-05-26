@@ -1,0 +1,20 @@
+---
+name: Actions en GitHub
+
+on: push
+jobs:
+  run-github-actions :
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar el directorio
+        run: |
+          ls-la
+      - name: checkout
+        run: |
+          actions/checkout@2
+      - name: Mostrar el directorio 2
+        run: |
+          ls-la
+
+
+      
