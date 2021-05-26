@@ -10,8 +10,7 @@ jobs:
         run: |
           ls-la
       - name: checkout
-        run: |
-          actions/checkout@2
+        uses: actions/checkout@2
       - name: Mostrar el directorio 2
         run: |
           ls-la
