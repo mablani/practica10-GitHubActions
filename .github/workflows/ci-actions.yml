@@ -14,6 +14,12 @@ jobs:
       - name: Mostrar el directorio 2
         run: |
           ls -la
+      - name: Crear Archivo Random
+        run: |
+          echo $RANDOM >> random.txt
+          git add random.txt
+          git commit -m "Añadido Random File"
+          git push
 
 
       
