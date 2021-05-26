@@ -12,9 +12,11 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '8'
-      - name: Mostrar versiones y ejecutar
+      - name: Mostrar versiones 
         run: |
           java -version
           mvn --version 
+      - name : clone y test
+        run: |
           git clone https://github.com/wakaleo/game-of-life.git 
           mvn test
