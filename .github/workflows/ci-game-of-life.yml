@@ -18,5 +18,5 @@ jobs:
           mvn --version 
       - name : clone y test
         run: |
-          git clone https://github.com/wakaleo/game-of-life.git 
+          git clone https://github.com/wakaleo/game-of-life.git .
           mvn test
