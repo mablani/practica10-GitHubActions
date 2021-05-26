@@ -4,10 +4,13 @@ env:
   WF_ENV: Esta es la variable general
 jobs:
   log-env: 
-  runs-on: ubuntu-lastest
-  env: 
-    JOB_ENV: Esta es la variable de job
-  steps:
-    - name:
-    env:
-      STEP_ENV: Esta es la variable de step
+    runs-on: ubuntu-lastest
+    env: 
+      JOB_ENV: Esta es la variable de job
+    steps:
+      - env:
+          STEP_ENV: Esta es la variable de step
+          run: |
+            echo "WF_ENF: ${WF_ENV}"
+            echo "JOB_ENV: ${JOB_ENV}"
+            echo "STEP_ENV: ${STEP_ENV}"
